@@ -1,0 +1,166 @@
+.bg {
+	&-white {
+		background-color: $bg-white;
+	}
+
+	&-light {
+		background-color: $bg-light;
+	}
+
+	&-dark {
+		background-color: $bg-dark;
+	}
+
+	&-black {
+		background-color: $bg-black;
+	}
+
+	&-violet {
+		background-color: $violet;
+	}
+}
+
+.border {
+	&-red {
+		border-color: $red;
+	}
+
+	&-yellow {
+		border-color: $main-color;
+	}
+
+	&-violet {
+		border-color: $violet;
+	}
+}
+
+.text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.8;
+	max-width: 945px;
+	min-width: 130px;
+
+	&-white {
+		color: $white;
+	}
+
+	&-gray {
+		color: $text-gray;
+		text-align: center;
+	}
+
+	&-red {
+		color: $red;
+	}
+
+	&-yellow {
+		color: $main-color;
+		white-space: nowrap;
+	}
+
+	&-violet {
+		color: $violet;
+	}
+
+	&-margin {
+		margin: 0 auto;
+	}
+
+	&-left {
+		text-align: left !important;
+	}
+
+	&-lh {
+		line-height: 1.3 !important;
+	}
+}
+
+.title {
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 1.5;
+
+	&-black {
+		color: $title-black;
+	}
+
+	&-white {
+		color: $white;
+	}
+
+	&-red {
+		color: $red;
+	}
+
+	&-yellow {
+		color: $main-color;
+	}
+
+	&-violet {
+		color: $violet;
+	}
+
+	&-uppercase {
+		text-transform: uppercase;
+	}
+
+	&-name {
+		font-size: 20px !important;
+	}
+
+	&-middle {
+		font-size: 24px !important;
+	}
+
+	&-hover {
+		cursor: pointer;
+		transition: all 0.3s linear;
+
+		&:hover {
+			color: $main-color;
+		}
+	}
+
+	&-big {
+		font-size: 60px !important;
+	}
+}
+
+.item {
+	&-red {
+		background-color: $red;
+
+		&::before {
+			border-color: $red transparent transparent transparent;
+		}
+
+		&::after {
+			background-color: $red;
+		}
+	}
+
+	&-yellow {
+		background-color: $main-color;
+
+		&::before {
+			border-color: $main-color transparent transparent transparent;
+		}
+
+		&::after {
+			background-color: $main-color;
+		}
+	}
+
+	&-violet {
+		background-color: $violet;
+
+		&::before {
+			border-color: $violet transparent transparent transparent;
+		}
+
+		&::after {
+			background-color: $violet;
+		}
+	}
+}

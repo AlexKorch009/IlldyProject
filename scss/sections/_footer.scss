@@ -1,0 +1,99 @@
+.footer {
+	position: relative;
+
+	&-wrapper {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 30px;
+		height: auto;
+		width: 100%;
+
+		@media screen and (max-width: $phone-size) {
+			grid-template-columns: auto;
+		}
+	}
+
+	&-item {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		padding: 10px 0;
+		width: 100%;
+
+		& > * {
+			margin: 15px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		width: 100%;
+
+		& > * {
+			margin: 10px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	&-link {
+		cursor: pointer;
+		display: block;
+		padding-left: 20px;
+		position: relative;
+		transition: all 0.3s linear;
+		width: 100%;
+
+		&:hover {
+			color: $violet;
+
+			&::before {
+				color: $violet;
+			}
+		}
+
+		&::before {
+			color: $gray;
+			content: "\f054";
+			display: block;
+			font-family: "FontAwesome";
+			font-size: 12px;
+			left: 0;
+			line-height: 18px;
+			position: absolute;
+			top: 0;
+			transition: all 0.3s linear;
+		}
+	}
+}
+
+.copyright {
+	background-color: $black;
+	height: auto;
+	padding: 30px 0;
+	position: relative;
+	width: 100%;
+
+	&-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin: 0 auto;
+	}
+}

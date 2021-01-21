@@ -1,0 +1,24 @@
+/*Utils ---------------------*/
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+/*HTML ----------------------*/
+@import "_html";
+
+/*Sections ------------------*/
+@import "sections/about";
+@import "sections/blog";
+@import "sections/buttons";
+@import "sections/contact";
+@import "sections/counter";
+@import "sections/footer";
+@import "sections/header";
+@import "sections/helper";
+@import "sections/intro";
+@import "sections/navigation";
+@import "sections/projects";
+@import "sections/section";
+@import "sections/services";
+@import "sections/team";
+@import "sections/testimonials";

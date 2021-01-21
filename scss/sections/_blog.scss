@@ -1,0 +1,55 @@
+.blog {
+	position: relative;
+
+	&-wrapper {
+		position: relative;
+	}
+
+	&-items {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-gap: 30px;
+		padding: 20px 0 35px;
+		position: relative;
+		width: 100%;
+
+		@media screen and (max-width: $phone-size) {
+			grid-template-columns: auto;
+		}
+	}
+
+	&-item {
+		height: auto;
+		width: 100%;
+
+		&__header {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			display: block;
+			min-height: 210px;
+			width: 100%;
+		}
+	}
+
+	&-content {
+		background-color: $bg-white;
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		padding: 40px 30px;
+		width: 100%;
+
+		& > * {
+			margin: 20px 0;
+
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}

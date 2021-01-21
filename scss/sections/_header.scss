@@ -1,0 +1,13 @@
+.header {
+	background-color: transparent;
+	padding: 20px 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+
+	&-inner {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+	}
+}

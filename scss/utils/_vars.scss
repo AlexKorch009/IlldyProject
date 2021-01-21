@@ -1,0 +1,67 @@
+/*Colors*/
+/*base colors*/
+$white: #fff;
+$black: #242320;
+$gray: #8c9597;
+/*main colors*/
+$main-color: #f1d204;
+$red: #f18b6d;
+$violet: #6a4d8a;
+/*icon colors*/
+$icon-hover: #333;
+$icon-color: #8c9597;
+/*text colors*/
+$title-white: #fff;
+$title-black: #545454;
+$text-white: #fff;
+$text-gray: #8c9597;
+/*bg colors*/
+$bg-white: #fff;
+$bg-light: #fbfbfb;
+$bg-dark: #222f36;
+$bg-black: #292825;
+/*link colors*/
+$link-hover: #6a4d8a;
+$link-visited: #6a4d8a;
+/*input colors*/
+$input-border: #e1e1e1;
+$input-bg: #fcfcfc;
+$label-color: #8c9597;
+/*Sizes*/
+$base-font-size: 16px; 
+
+/*Breakpoints*/
+$breakpoints: (
+	"desktop-wide": 1440px,
+	"desktop" : 1248px,
+	"tablet-wide" : 1024px,
+	"tablet" : 768px,
+	"tablet-small": 640px,
+	"phablet" : 560px,
+	"phone-wide" : 480px,
+	"phone" : 400px
+);
+
+/*Content*/
+$notebook-size:1365px;
+$content-size: 1200px;
+$desktop-size: 1199px;
+$tablet-size: 1023px;
+$phablet-size: 991px;
+$phone-size: 767px; 
+$mobile-size: 479px;
+
+// @media screen and (max-width: $notebook-size) {}
+	
+// @media screen and (max-width: $content-size) {}
+
+// @media screen and (max-width: $desktop-size) {}
+	
+// @media screen and (max-width: $tablet-size) {}
+
+// @media screen and (max-width: $phablet-size) {}
+	
+// @media screen and (max-width: $phone-size) {}
+	
+// @media screen and (max-width: $mobile-size) {}
+
