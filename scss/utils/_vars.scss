@@ -32,14 +32,14 @@ $base-font-size: 16px;
 
 /*Breakpoints*/
 $breakpoints: (
-	"desktop-wide": 1440px,
-	"desktop" : 1248px,
-	"tablet-wide" : 1024px,
-	"tablet" : 768px,
-	"tablet-small": 640px,
-	"phablet" : 560px,
-	"phone-wide" : 480px,
-	"phone" : 400px
+  "desktop-wide": 1440px,
+  "desktop" : 1248px,
+  "tablet-wide" : 1024px,
+  "tablet" : 768px,
+  "tablet-small": 640px,
+  "phablet" : 560px,
+  "phone-wide" : 480px,
+  "phone" : 400px
 );
 
 /*Content*/
@@ -52,16 +52,10 @@ $phone-size: 767px;
 $mobile-size: 479px;
 
 // @media screen and (max-width: $notebook-size) {}
-	
 // @media screen and (max-width: $content-size) {}
-
 // @media screen and (max-width: $desktop-size) {}
-	
 // @media screen and (max-width: $tablet-size) {}
-
 // @media screen and (max-width: $phablet-size) {}
-	
 // @media screen and (max-width: $phone-size) {}
-	
 // @media screen and (max-width: $mobile-size) {}
 

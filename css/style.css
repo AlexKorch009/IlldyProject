@@ -772,14 +772,6 @@ button {
   width: 100%;
 }
 
-.footer-link:hover {
-  color: #6a4d8a;
-}
-
-.footer-link:hover::before {
-  color: #6a4d8a;
-}
-
 .footer-link::before {
   color: #8c9597;
   content: "\f054";
@@ -792,6 +784,14 @@ button {
   top: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.footer-link:hover {
+  color: #6a4d8a;
+}
+
+.footer-link:hover::before {
+  color: #6a4d8a;
 }
 
 .copyright {

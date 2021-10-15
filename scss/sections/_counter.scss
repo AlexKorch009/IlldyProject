@@ -1,49 +1,47 @@
 .counter {
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: auto;
-	position: relative;
-	width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  position: relative;
+  width: 100%;
 
-	&-items {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-gap: 30px;
-		height: auto;
-		width: 100%;
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    height: auto;
+    width: 100%;
+    @media screen and (max-width: $phablet-size) {
+      grid-template-columns: auto;
+    }
+  }
 
-		@media screen and (max-width: $phablet-size) {
-			grid-template-columns: auto;
-		}
-	}
+  &-item {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  }
 
-	&-item {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-		justify-content: center;
-		margin-bottom: 20px;
-		position: relative;
-		width: 100%;
-	}
-
-	&-divider {
-		display: block;
-		height: 100%;
-		position: absolute;
-		right: -16px;
-		width: 2px;
-
-		@media screen and (max-width: $phablet-size) {
-			bottom: -16px;
-			height: 2px;
-			left: 0;
-			margin: 0 auto;
-			right: 0;
-			width: 250px;
-		}
-	}
+  &-divider {
+    display: block;
+    height: 100%;
+    position: absolute;
+    right: -16px;
+    width: 2px;
+    @media screen and (max-width: $phablet-size) {
+      bottom: -16px;
+      height: 2px;
+      left: 0;
+      margin: 0 auto;
+      right: 0;
+      width: 250px;
+    }
+  }
 }

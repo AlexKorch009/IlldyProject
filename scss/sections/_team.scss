@@ -1,72 +1,65 @@
 .team {
-	&-image {
-		@include size(125px);
-		border-radius: 50%;
-	}
+  &-image {
+    @include size(125px);
+    border-radius: 50%;
+  }
 
-	&-items {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-gap: 30px;
-		height: auto;
-		margin: 80px 0 50px;
-		width: 100%;
+  &-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    height: auto;
+    margin: 80px 0 50px;
+    width: 100%;
+    @media screen and (max-width: $tablet-size) {
+      grid-template-columns: auto auto;
+    }
+    @media screen and (max-width: $phone-size) {
+      grid-template-columns: auto;
+    }
+  }
 
-		@media screen and (max-width: $tablet-size) {
-			grid-template-columns: auto auto;
-		}
+  &-item {
+    display: flex;
+    height: auto;
+    position: relative;
+    width: 100%;
+  }
 
-		@media screen and (max-width: $phone-size) {
-			grid-template-columns: auto;
-		}
-	}
+  &-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px 10px 20px;
+    & > * {
+      margin: 5px 0;
+      &:first-child {
+        margin-top: 0;
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
 
-	&-item {
-		display: flex;
-		height: auto;
-		position: relative;
-		width: 100%;
-	}
+  &-social {
+    display: flex;
+    height: auto;
+    width: 100%;
+    & > * {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
-	&-content {
-		display: flex;
-		flex-direction: column;
-		padding: 10px 10px 10px 20px;
-
-		& > * {
-			margin: 5px 0;
-
-			&:first-child {
-				margin-top: 0;
-			}
-
-			&:last-child {
-				margin-bottom: 0;
-			}
-		}
-	}
-
-	&-social {
-		display: flex;
-		height: auto;
-		width: 100%;
-
-		& > * {
-			margin-right: 10px;
-
-			&:last-child {
-				margin-right: 0;
-			}
-		}
-
-		&__icon {
-			@include size(25px);
-			align-items: center;
-			border: 1px solid;
-			border-radius: 50%;
-			cursor: pointer;
-			display: flex;
-			justify-content: center;
-		}
-	}
+    &__icon {
+      @include size(25px);
+      align-items: center;
+      border: 1px solid;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

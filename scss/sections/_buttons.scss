@@ -1,56 +1,54 @@
 .button {
-	position: relative;
-}
+  position: relative;
+  }
 
-.btn {
-	align-items: center;
-	border-radius: 3px;
-	cursor: pointer;
-	display: flex;
-	font-weight: 700;
-	justify-content: center;
-	letter-spacing: 1px;
-	transition: all 0.3s linear;
-	width: 100%;
+  .btn {
+  align-items: center;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 1px;
+  transition: all 0.3s linear;
+  width: 100%;
 
-	&-transparent {
-		background-color: rgba($black, 0.3);
-		border: 3px solid $white;
-		color: $white;
-		height: 60px;
-		margin: 0 auto;
-		max-width: 240px;
+  &-transparent {
+    background-color: rgba($black, 0.3);
+    border: 3px solid $white;
+    color: $white;
+    height: 60px;
+    margin: 0 auto;
+    max-width: 240px;
+    &:hover {
+      background-color: rgba($black, 0.1);
+    }
+  }
 
-		&:hover {
-			background-color: rgba($black, 0.1);
-		}
-	}
+  &-yellow {
+    background-color: $main-color;
+    border: 0;
+    height: 45px;
+    margin: 50px auto;
+    width: 155px;
+    &:hover {
+      background-color: $violet;
+    }
+  }
 
-	&-yellow {
-		background-color: $main-color;
-		border: 0;
-		height: 45px;
-		margin: 50px auto;
-		width: 155px;
+  &-text {
+    justify-content: left;
 
-		&:hover {
-			background-color: $violet;
-		}
-	}
+    &:hover {
+      color: $violet;
+    }
+  }
 
-	&-text {
-		justify-content: left;
+  &-icon {
+    margin-right: 10px;
+  }
 
-		&:hover {
-			color: $violet;
-		}
-	}
-
-	&-icon {
-		margin-right: 10px;
-	}
-
-	&-right {
-		margin: 20px 0 20px auto !important;
-	}
+  &-right {
+    margin: 20px 0 20px auto !important;
+  }
 }

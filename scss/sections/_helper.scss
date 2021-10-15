@@ -1,166 +1,159 @@
 .bg {
-	&-white {
-		background-color: $bg-white;
-	}
+  &-white {
+    background-color: $bg-white;
+  }
 
-	&-light {
-		background-color: $bg-light;
-	}
+  &-light {
+    background-color: $bg-light;
+  }
 
-	&-dark {
-		background-color: $bg-dark;
-	}
+  &-dark {
+    background-color: $bg-dark;
+  }
 
-	&-black {
-		background-color: $bg-black;
-	}
+  &-black {
+    background-color: $bg-black;
+  }
 
-	&-violet {
-		background-color: $violet;
-	}
+  &-violet {
+    background-color: $violet;
+  }
 }
 
 .border {
-	&-red {
-		border-color: $red;
-	}
+  &-red {
+    border-color: $red;
+  }
 
-	&-yellow {
-		border-color: $main-color;
-	}
+  &-yellow {
+    border-color: $main-color;
+  }
 
-	&-violet {
-		border-color: $violet;
-	}
+  &-violet {
+    border-color: $violet;
+  }
 }
 
 .text {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.8;
-	max-width: 945px;
-	min-width: 130px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  max-width: 945px;
+  min-width: 130px;
 
-	&-white {
-		color: $white;
-	}
+  &-white {
+    color: $white;
+  }
 
-	&-gray {
-		color: $text-gray;
-		text-align: center;
-	}
+  &-gray {
+    color: $text-gray;
+    text-align: center;
+  }
 
-	&-red {
-		color: $red;
-	}
+  &-red {
+    color: $red;
+  }
 
-	&-yellow {
-		color: $main-color;
-		white-space: nowrap;
-	}
+  &-yellow {
+    color: $main-color;
+    white-space: nowrap;
+  }
 
-	&-violet {
-		color: $violet;
-	}
+  &-violet {
+    color: $violet;
+  }
 
-	&-margin {
-		margin: 0 auto;
-	}
+  &-margin {
+    margin: 0 auto;
+  }
 
-	&-left {
-		text-align: left !important;
-	}
+  &-left {
+    text-align: left !important;
+  }
 
-	&-lh {
-		line-height: 1.3 !important;
-	}
+  &-lh {
+    line-height: 1.3 !important;
+  }
 }
 
 .title {
-	font-size: 35px;
-	font-weight: 700;
-	line-height: 1.5;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 1.5;
 
-	&-black {
-		color: $title-black;
-	}
+  &-black {
+    color: $title-black;
+  }
 
-	&-white {
-		color: $white;
-	}
+  &-white {
+    color: $white;
+  }
 
-	&-red {
-		color: $red;
-	}
+  &-red {
+    color: $red;
+  }
 
-	&-yellow {
-		color: $main-color;
-	}
+  &-yellow {
+    color: $main-color;
+  }
 
-	&-violet {
-		color: $violet;
-	}
+  &-violet {
+    color: $violet;
+  }
 
-	&-uppercase {
-		text-transform: uppercase;
-	}
+  &-uppercase {
+    text-transform: uppercase;
+  }
 
-	&-name {
-		font-size: 20px !important;
-	}
+  &-name {
+    font-size: 20px !important;
+  }
 
-	&-middle {
-		font-size: 24px !important;
-	}
+  &-middle {
+    font-size: 24px !important;
+  }
 
-	&-hover {
-		cursor: pointer;
-		transition: all 0.3s linear;
+  &-hover {
+    cursor: pointer;
+    transition: all 0.3s linear;
+    &:hover {
+      color: $main-color;
+    }
+  }
 
-		&:hover {
-			color: $main-color;
-		}
-	}
-
-	&-big {
-		font-size: 60px !important;
-	}
+  &-big {
+    font-size: 60px !important;
+  }
 }
 
 .item {
-	&-red {
-		background-color: $red;
+  &-red {
+    background-color: $red;
+    &::before {
+      border-color: $red transparent transparent transparent;
+    }
+    &::after {
+      background-color: $red;
+    }
+  }
 
-		&::before {
-			border-color: $red transparent transparent transparent;
-		}
+  &-yellow {
+    background-color: $main-color;
+    &::before {
+      border-color: $main-color transparent transparent transparent;
+    }
+    &::after {
+      background-color: $main-color;
+    }
+  }
 
-		&::after {
-			background-color: $red;
-		}
-	}
-
-	&-yellow {
-		background-color: $main-color;
-
-		&::before {
-			border-color: $main-color transparent transparent transparent;
-		}
-
-		&::after {
-			background-color: $main-color;
-		}
-	}
-
-	&-violet {
-		background-color: $violet;
-
-		&::before {
-			border-color: $violet transparent transparent transparent;
-		}
-
-		&::after {
-			background-color: $violet;
-		}
-	}
+  &-violet {
+    background-color: $violet;
+    &::before {
+      border-color: $violet transparent transparent transparent;
+    }
+    &::after {
+      background-color: $violet;
+    }
+  }
 }
